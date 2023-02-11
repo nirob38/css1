@@ -29,7 +29,9 @@ nav ul{
     display: flex;
     align-items: center;
 }
-
+.navItems li:hover {
+    color:#fb5200
+}
 .btn-primary{
     background-color: orangered;
     border: none;
