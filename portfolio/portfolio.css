@@ -1,6 +1,10 @@
 * {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    overflow-x:hidden ;
 }
 header{
     background-color: antiquewhite;
@@ -55,10 +59,22 @@ nav ul{
     border: none;
 }
 .banner{
-  margin: 0px 200px;
+  padding: 0px 80px;
   display:flex;
   align-items: center;
+  justify-content: space-between;
 }
+
+.banner .info{
+    flex: 1;
+    min-width: 22rem;
+}
+.banner img{
+    flex: 1;
+    width: 100%;
+}
+
+
 
 .banner-title{
     font-weight: 700;
@@ -240,7 +256,7 @@ nav ul{
     gap: 200px;
     background-color: bisque;
     height: 350px;
-    width: 1050px;
+    width: auto;
 }
 .contact-title{
  text-align: left;
@@ -277,4 +293,32 @@ nav ul{
 }
 .btn-primary6{
     color: white;
+}
+
+
+/* responsive */
+
+@media (max-width:1280px) {
+body{
+}
+}
+@media (max-width:1080px) {
+.banner{
+    flex-direction: column;
+}
+.banner .info{
+    text-align: center;
+}
+}
+@media (max-width:890px) {
+body{
+}
+}
+@media (max-width:760px) {
+body{
+}
+}
+@media (max-width:590px) {
+body{
+}
 }
